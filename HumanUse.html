@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Uses of Bioluminescence</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #142850, #27496d);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #142850;
+            color: #00a8cc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            background-color: #27496d;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+            nav a {
+                color: #00a8cc;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+
+                nav a:hover {
+                    color: #01d4f0;
+                }
+
+        .content {
+            padding: 40px 20px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+            .timeline::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                background-color: #00a8cc;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -3px;
+            }
+
+        .container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            background-color: #27496d;
+            border-radius: 10px;
+            width: 40%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+            .container.left {
+                left: 55%;
+                flex-direction: row;
+            }
+
+            .container.right {
+                left: 0%;
+                flex-direction: row-reverse;
+            }
+
+            .container img {
+                width: 250px;
+                height: 250px;
+                border-radius: 15px; /* Rounded corners for square images */
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            }
+
+            .container.left img {
+                right: -300px; /* Moves image outside the container on the left */
+            }
+
+            .container.right img {
+                left: -300px; /* Moves image outside the container on the right */
+            }
+
+            .container::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .container.right::after {
+                left: -20px;
+                right: auto;
+                border-style: solid;
+                border-color: transparent #27496d transparent transparent;
+                border-width: 10px 20px 10px 0;
+            }
+
+            .container.left::after {
+                right: -20px;
+                left: auto;
+                border-style: solid;
+                border-color: transparent transparent transparent #27496d;
+                border-width: 10px 0 10px 20px;
+            }
+
+        footer {
+            background-color: #142850;
+            color: #00a8cc;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Human Uses of Bioluminescence</h1>
+        <p>Explore how this natural phenomenon is inspiring innovation.</p>
+    </header>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="HowitWorks.html">How It Works</a>
+        <a href="WheretoSee.html">Where to See</a>
+        <a href="HumanUse.html">Human Use</a>
+        <a href="Travel.html">Travel</a>
+    </nav>
+
+    <div class="content">
+        <div class="timeline">
+            <div class="container left">
+                <img src="https://media.istockphoto.com/id/880962912/photo/drops-of-paint-in-a-glass-of-water.jpg?s=612x612&w=0&k=20&c=5r1PkLPxhJLQmIZ-4rTon8CHSkHAi7NaQOsKyDxJmGM=" alt="Medicine Icon" >
+                <div>
+                    <h2>Medicine</h2>
+                    <p>Bioluminescence is can be used in medical research as a tool for imaging. Scientists inject luciferase genes into cells to track diseases like cancer or study drug effects in real time.</p>
+                    <small>iStock</small>
+                </div>
+            </div>
+            <div class="container right">
+                <img src="https://media.istockphoto.com/id/1154001969/photo/vivid-colours-and-striking-rock-formations-in-the-otherworldly-scenery-of-dalol-ethiopia.jpg?s=612x612&w=0&k=20&c=Uzza1ZChxSOxM2ZmQIuXbXEocsefLCFamgrxu_LFGM4=" alt="Environment Icon">
+                <div>
+                    <h2>Environmental Monitoring</h2>
+                    <p>Researchers use bioluminescent bacteria in order to detect pollutants in and around the water. When bacteria encounter harmful toxins, their glow diminishes, acting as an indicator.</p>
+                    <small>iStock</small>
+                </div>
+            </div>
+            <div class="container left">
+                <img src="https://media.istockphoto.com/id/1447082656/photo/closeup-of-jellyfish-under-the-deep-ocean.jpg?s=612x612&w=0&k=20&c=0BE0_PNtRYOWEyw3rrlYMn8A2SUS3a2QCrY0mavgBYA=" alt="Energy Icon">
+                <div>
+                    <h2>Energy Efficiency</h2>
+                    <p>Bioluminescence is being explored as an option for sustainable lighting. Engineers are studying glowing algae and bacteria to develop eco-friendly, light-producing options for materials.</p>
+                    <small>iStock</small>
+                </div>
+            </div>
+            <div class="container right">
+                <img src="https://media.istockphoto.com/id/1283893663/photo/abstract-blue-light-glow-causing-water-glass-reflections.jpg?s=612x612&w=0&k=20&c=POnK0u1lMNccoKZhYmuvkWvYf7QAItUWEu3FkIYbBn4=" alt="Art Icon">
+                <div>
+                    <h2>Art and Design</h2>
+                    <p>Artists and designers are using bioluminescent organisms to create glowing types of structures like installations, glowing fashion, and innovative bio-art for living components to their art.</p>
+                    <small>iStock</small>
+                </div>
+            </div>
+            <div class="container left">
+                <img src="https://media.istockphoto.com/id/1292075696/photo/coronavirus-disease-covid-19-outbreak.jpg?s=612x612&w=0&k=20&c=QA8mezPznnv6J-HSbADHNl97-Qy4STfweyg6Cb7R6DA=" alt="Biotechnology Icon">
+                <div>
+                    <h2>Biotechnology</h2>
+                    <p>In biotechnology, scientists use luciferase to study genes, creating breakthroughs in genetics and biology research. Biotechnology is able to advance efficiently by mimicking nature.</p>
+                    <small>iStock</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Biolumi Beaches by Megan Yiu</p>
+    </footer>
+</body>
+</html>
